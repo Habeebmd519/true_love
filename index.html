@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love - Tutu</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* background: url('/assets/5.png') no-repeat center center/cover; */
+            background: linear-gradient(to right, #faf6f7, #f0c5d7);
+            /* background: linear-gradient(to right, #ff758c, #ff7eb3); */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3.2em;
+            font-weight: bold;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 130px;
+            /* height: 130px; */
+            border-radius: 15px;
+            transition: transform 0.5s ease-in-out;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .gallery img:active {
+            transform: scale(1.2) rotate(5deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .message {
+            font-size: 2em;
+            margin-top: 30px;
+            font-style: italic;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            color: #ffccff;
+        }
+
+        .heart {
+            font-size: 2.5em;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Love, Tutu ❤️</h1>
+        <div class="gallery">
+            <img src="/assets/1.jpeg" alt="Tutu">
+            <img src="/assets/2.jpeg" alt="Tutu">
+            <img src="/assets/3.jpeg" alt="Tutu">
+            <img src="/assets/4.jpeg" alt="Tutu">
+            <img src="/assets/5.png" alt="Tutu">
+        </div>
+        <p class="message">"Tutu, you are the most beautiful part of my life. Every heartbeat of mine whispers your
+            name. I love you forever! ❤️"</p>
+        <div class="heart">💖</div>
+    </div>
+</body>
+
+</html>
